@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
     private GameObject _shield;
     [SerializeField]
     private GameObject _leftEngine, _rightEngine;
+    [SerializeField]
+    AudioSource _laserSound;
 
     private int _score = 0;
     private float _canFire = -1;
@@ -87,6 +89,8 @@ public class Player : MonoBehaviour
         {
             Instantiate(_laser, new Vector3(transform.position.x, transform.position.y + 1, 0), Quaternion.identity);
         }
+
+        _laserSound.Play();
     }
 
     public void Damage()
