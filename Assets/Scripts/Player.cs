@@ -72,7 +72,7 @@ public class Player : MonoBehaviour
             transform.position = new Vector3(11.27f, transform.position.y, 0);
         }
 
-        transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, -3.36f, 0), 0);
+        transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, -3.36f, 3.36f), 0);
     }
 
     void Fire()
