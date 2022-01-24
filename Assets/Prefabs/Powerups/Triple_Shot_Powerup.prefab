@@ -136,6 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _tripleShotPrefab: {fileID: 0}
+  _clip: {fileID: 8300000, guid: 5ee343246919d2b4bba63ae629e95494, type: 3}
   _powerupID: 0
 --- !u!95 &6382234969973947965
 Animator:
